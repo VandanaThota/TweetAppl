@@ -1,0 +1,34 @@
+<!-- <p>allusers works!</p> -->
+<table class="thead-light">
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>LoginID</th>
+        <th>contactNumber</th>
+        <th>Password</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let user of service.list">
+            <td>
+{{user.firstName}}
+            </td>
+            <td>
+                {{user.lastName}}
+                            </td>
+                            <td>
+                                {{user.email}}
+                                            </td>
+                                            <td>
+                                                {{user.loginID}}
+                                                            </td>
+                                                            <td>
+                                                                {{user.contactNumber}}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{user.password}}
+                                                                                            </td>
+
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,60 @@
+
+<!-- <div class="container">
+    <div class="jumbotron py-3">
+    <h1 class="display-4 text-center">Registration Form</h1>
+</div> -->
+
+    <!-- <a class="nav-item nav-link-edit" type="button" routerLink="/home/register" >Register here</a> -->
+    <!-- <button class="nav-item nav-link-edit" type="button"  (click)="navigate()">Register here</button >
+  -->
+    <!-- <app-register></app-register>  
+   
+
+</div> -->
+<router-outlet></router-outlet>
+
+<div class="limiter" id="login">
+    <div class="container-login100" style="background-image:url(https://th.bing.com/th/id/R.dcf00f18058e6cd7271dbcc242c7d77a?rik=biZ2y4V3Drw4HQ&riu=http%3a%2f%2fteks.co.in%2fsite%2fblog%2fwp-content%2fuploads%2f2017%2f04%2f08_messaging-app.jpg&ehk=tAbXnDb0N3Sy10kMGyq747ihQzDg%2b%2bOiKNUMJWj0lVI%3d&risl=&pid=ImgRaw&r=0)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="login_topimg">
+                    </div>
+                    <div class="wrap-login100">
+                        <form class="login100-form validate-form"  movalidate #form="ngForm" (submit)="OnSubmit(form)"> 
+                            <span class="login100-form-title "> Login </span> <span class="login100-form-subtitle m-b-16"> to your account </span>
+                            <div class="wrap-input100 validate-input m-b-16" data-validate="Valid loginID is required"> <input class="input100" type="text" name="loginID" #loginID="ngModel" [(ngModel)]="hService.formData.loginID" placeholder="LoginID"> <span class="focus-input100"></span> <span class="symbol-input100"> <span class="glyphicon glyphicon-user"></span> </span> </div>
+                            <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required"> <input class="input100" type="password" name="pass"  #pass="ngModel" [(ngModel)]="hService.formData.password" placeholder="Password"> <span class="focus-input100"></span> <span class="symbol-input100"> <span class="glyphicon glyphicon-lock"></span> </span> </div>
+                            <div class="flex-sb-m w-full p-b-30">
+                                
+                                <div>"
+                                    <div class="container-login100-form-btn p-t-25"> <button class="login100-form-btn" (click)="navigate4()">  Forgot Password? </button> </div>
+                                 
+                                   
+                                </div>
+                            </div>
+                            <div class="container-login100-form-btn p-t-25" > <button class="login100-form-btn"> Login </button> </div>
+
+                            <div class="container-login100-form-btn p-t-25"> <button class="login100-form-btn" (click)="navigate()"> Register </button> </div>
+                      
+                            <div class="container-login100-form-btn p-t-25"> <button class="login100-form-btn" (click)="navigate2()"> GetAllUsers </button> </div>
+                            <div class="container-login100-form-btn p-t-25"> <button class="login100-form-btn" (click)="navigate3()"> GetUsers </button> </div>
+                      
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+ 
+  
+
+
+

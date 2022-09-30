@@ -1,0 +1,53 @@
+<form movalidate #form="ngForm" (submit)="OnSubmitUserID()">
+    <div class="container">
+    
+    <div class="form-group">
+        <label>USER NAME</label>
+        <input type="text" class="form-control form-control-lg" placeholder="LoginID" 
+        name="loginID" #loginID="ngModel" [(ngModel)]="service.formData.loginID"
+        required [class.invalid]="loginID.invalid && loginID.touched">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary btn-lg btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
+     </div>
+    
+    </div>
+    </form>
+    
+<!-- <p>allusers works!</p> -->
+<table class="thead-light">
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>LoginID</th>
+        <th>contactNumber</th>
+        <!-- <th>Password</th> -->
+    </tr>
+    <tbody>
+        <!-- <tr [(ngModel)]="service.formData"> -->
+            <tr [(ngModel)]="service.reg">
+            <td>
+{{service.reg.firstName}}
+            </td>
+            <td>
+                {{service.reg.lastName}}
+                            </td>
+                            <td>
+                                {{service.reg.email}}
+                                            </td>
+                                            <td>
+                                                {{service.reg.loginID}}
+                                                            </td>
+                                                            <td>
+                                                                {{service.reg.contactNumber}}
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                {{service.reg.password}}
+                                                                                            </td> -->
+
+        </tr>
+    </tbody>
+</table>
+
+

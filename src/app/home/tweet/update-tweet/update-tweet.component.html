@@ -1,0 +1,38 @@
+<p>update-tweet works!</p>
+
+<form movalidate  #form="ngForm" (submit)="OnSubmitForm(form)">
+    <div class="container">
+    
+    <div class="form-group">
+        <label>USERNAME</label>
+        <input type="text" class="form-control form-control-lg" placeholder="Username" 
+        name="username" #username="ngModel" [(ngModel)]="hService.tweet.username"
+        required [class.invalid]="username.invalid && username.touched">
+    </div>
+    <div class="form-group">
+        <label>TWEETID</label>
+        <input type="text" class="form-control form-control-lg" placeholder="id" 
+        name="id" #id="ngModel" [(ngModel)]="hService.tweet.id"
+        required [class.invalid]="id.invalid && id.touched">
+    </div>
+    
+     <div class="form-group">
+        <label>TWEET</label>
+        <input type="text" class="form-control form-control-lg" placeholder="tweet" 
+        name="tweet" #tweet="ngModel" [(ngModel)]="hService.tweet.tweet"
+        required [class.invalid]="tweet.invalid && tweet.touched">
+    </div>
+    
+    <div class="form-group">
+        <label>TAG</label>
+        <input type="text" class="form-control form-control-lg" placeholder="tag" 
+        name="tag" #tag="ngModel" [(ngModel)]="hService.tweet.tag"
+        required [class.invalid]="tag.invalid && tag.touched">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary btn-lg btn-block" [disabled]="form.invalid"  type="submit">SUBMIT</button>
+        
+     </div>
+    
+    </div>
+    </form>

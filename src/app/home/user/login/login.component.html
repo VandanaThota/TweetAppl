@@ -1,0 +1,43 @@
+
+<table class="thead-light">
+    <tr>
+        <th>Id</th>
+        <th>Tweet</th>
+        <th>Tag</th>
+
+        <th>Username</th>
+        <th>Likes</th>
+  
+    </tr>
+    <tbody>
+        <tr *ngFor="let user of hService.tweetlist">
+            <td>
+{{user.id}}
+            </td>
+            <td  >
+                {{user.tweet}}
+                            </td>
+                            <td >
+                                {{user.tag}}
+                                            </td>
+                                            <td>
+                                                {{user.username}}
+                                                            </td>
+                                                            <td >
+                                                                {{user.likes}}
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                 <button type="button" class="btn btn-default btn-sm" (click)="navigate4()">, -->
+                                                                                    <!--<i class="far fa-thumbs-up" (click)="OnLike(user.id)"></i>-->
+                                                                                    <!-- </button> 
+                                                                            </td> -->
+                                                                            
+        </tr>
+    </tbody>
+</table>
+<button (click)="navigate()">Post Tweet</button>
+<button (click)="navigate1()">Get Tweet</button>
+<button (click)="navigate2()">Delete Tweet</button>
+<button (click)="navigate3()">Update Tweet</button>
+<button (click)="navigate4()">Like Tweet</button>
+<button (click)="navigate5()">Reply Tweet</button>

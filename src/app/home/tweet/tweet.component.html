@@ -1,0 +1,33 @@
+
+<table class="thead-light">
+    <tr>
+        <th>Id</th>
+        <th>Tweet</th>
+        <th>Tag</th>
+       <th>Username</th>
+        <th>Likes</th>
+  
+    </tr>
+    <tbody>
+        <tr *ngFor="let user of service.list">
+            <td>
+{{user.id}}
+            </td>
+            <td>
+                {{user.tweet}}
+                            </td>
+                            <td>
+                                {{user.tag}}
+                                            </td>
+                                            <td>
+                                                {{user.username}}
+                                                            </td>
+                                                            <td>
+                                                                {{user.likes}}
+                                                                            </td>
+                                                                            
+        </tr>
+    </tbody>
+</table>
+<button (click)="navigate()">Post Tweet</button>
+<button (click)="navigate1()">Get Tweet</button>
